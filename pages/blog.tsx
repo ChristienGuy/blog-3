@@ -1,18 +1,20 @@
 import React from "react";
 import Head from "next/head";
 import { Nav } from "../components/Nav";
+import Main from "../components/Main";
 
-const Blog = () => {
+export default function Blog() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Blog of Chris</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <h1>Blog</h1>
+
+      <Main>
+        <h1>Blog</h1>
+      </Main>
     </>
   );
-};
-
-export default Blog;
+}
